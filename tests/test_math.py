@@ -6,11 +6,13 @@ Their puspose is to show how to use the pytest framework by example.
 import pytest
 
 
+@pytest.mark.math
 def test_one_plus_one():
     """A most basic test function"""
     assert 1 + 1 == 2
 
 
+@pytest.mark.math
 def test_one_plus_two():
     """A test function to show assertion introspection"""
     a = 1
@@ -27,6 +29,7 @@ def test_one_plus_two():
     assert a + b == c
 
 
+@pytest.mark.math
 def test_divide_by_zero():
     """A test function that verifies an exception"""
     with pytest.raises(ZeroDivisionError) as e:
@@ -53,6 +56,7 @@ products = [  # Multiplication test cases:
 
 
 # DRY Principle: Don't Repeat Yourself!
+@pytest.mark.math
 @pytest.mark.parametrize("a, b, product", products)
 def test_multiply_two_numbers(a, b, product):
     """A parametrized test function"""
