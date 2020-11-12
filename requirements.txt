@@ -1,1 +1,5 @@
 pytest
+pytest-html
+pytest-cov
+pytest-xdist
+requests

@@ -127,4 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/My Notes.txt
+
+# My stuff
+/My Notes.md
+/htmlcov
+/report.html
